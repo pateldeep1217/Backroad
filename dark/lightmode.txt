@@ -1,0 +1,62 @@
+Sure, here's a simple example of a reusable Dark/Light mode toggle component using React, TypeScript, Tailwind CSS, `tailwind-merge`, and `clsx`. This component uses the `useState` hook to manage the theme state and the `useEffect` hook to apply the chosen theme to the document body.
+
+```tsx
+// DarkModeToggle.tsx
+import React, { useState, useEffect } from 'react';
+import clsx from 'clsx';
+import tm from 'tailwind-merge';
+
+const DarkModeToggle: React.FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Apply the theme to the body
+  useEffect(() => {
+    document.body.className = isDarkMode ? 'dark' : '';
+  }, [isDarkMode]);
+
+  return (
+    <button
+      className={clsx(
+        'p-2 rounded-md',
+        tm`bg-${isDarkMode ? 'gray-800' : 'gray-200'}`,
+        tm`text-${isDarkMode ? 'gray-200' : 'gray-800'}`
+      )}
+      onClick={() => setIsDarkMode(!isDarkMode)}
+    >
+      {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+    </button>
+  );
+};
+
+export default DarkModeToggle;
+```
+
+You can use this component in any of your React projects. Just import it and place it wherever you want the toggle button to appear:
+
+```tsx
+// App.tsx
+import React from 'react';
+import DarkModeToggle from './DarkModeToggle';
+
+const App: React.FC = () => {
+  return (
+    <div className="p-4">
+      <DarkModeToggle />
+      {/* rest of your app */}
+    </div>
+  );
+};
+
+export default App;
+```
+
+Remember to configure Tailwind CSS for dark mode in your `tailwind.config.js` file:
+
+```js
+module.exports = {
+  darkMode: 'class', // or 'media'
+  // ...
+};
+```
+
+This is a simple example and might not cover all use cases. Depending on your needs, you might want to store the user's theme preference in `localStorage` or provide a context for the theme state that can be accessed from anywhere in your app. 😊
