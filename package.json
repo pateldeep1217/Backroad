@@ -1,5 +1,5 @@
 {
-  "name": "react-bits-and-pieces",
+  "name": "backroad",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "feather-icons": "^4.29.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.3.0"
