@@ -1,8 +1,10 @@
 function Hero() {
   return (
     <section className=" md:bg-main  flex min-h-screen items-center justify-center bg-primary-5 bg-cover bg-center text-white ">
-      <div className=" px-12 text-center md:max-w-full">
-        <h1 className="text-[3rem] font-bold uppercase">continue exploring</h1>
+      <div className=" px-12 text-center md:max-w-5xl">
+        <h1 className="text-[3rem] font-bold uppercase lg:text-[4rem]">
+          continue exploring
+        </h1>
         <p className="mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           explicabo debitis est autem dicta.
