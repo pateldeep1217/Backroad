@@ -1,7 +1,12 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-function SocialMediaIcon({ icon, className }) {
+interface SocialMediaIconProps {
+  icon: React.ReactNode;
+  className?: string;
+}
+
+function SocialMediaIcon({ icon, className }: SocialMediaIconProps) {
   return (
     <div
       className={twMerge(

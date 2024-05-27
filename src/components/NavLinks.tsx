@@ -1,9 +1,14 @@
-import React from "react";
-import { links } from "../data.js";
+import { links } from "../data/data";
+export interface Link {
+  id: number;
+  href: string;
+  text: string;
+}
+
 function NavLinks() {
   return (
     <ul className=" md:flex md:gap-5">
-      {links.map(({ id, href, text }) => (
+      {links.map(({ id, href, text }: Link) => (
         <li key={id}>
           <a
             href={href}
