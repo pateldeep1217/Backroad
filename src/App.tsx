@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <main className="font-lato  text-grey-1">
+    <main className="box-border  font-lato tracking-[.25rem] text-grey-1">
       <Header />
+      <Hero />
     </main>
   );
 }
