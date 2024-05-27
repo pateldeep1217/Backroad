@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className=" flex min-h-screen items-center justify-center bg-primary-5 text-white">
+    <section className=" md:bg-main  flex min-h-screen items-center justify-center bg-primary-5 bg-cover bg-center text-white ">
       <div className=" px-12 text-center md:max-w-full">
         <h1 className="text-[3rem] font-bold uppercase">continue exploring</h1>
         <p className="mb-5">

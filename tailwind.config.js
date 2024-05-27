@@ -6,6 +6,9 @@ export default {
       lato: ["Lato", "sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        main: "linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),url('/src/assets/images/main.jpg')",
+      },
       colors: {
         primary: {
           1: "hsl(184, 91%, 17%)",
