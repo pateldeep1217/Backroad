@@ -7,7 +7,7 @@ interface SectionHeadingProps {
 
 function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <h2 className="mb-16 mt-[5rem] text-center text-3xl font-bold uppercase">
+    <h2 className="mb-16 mt-[5rem] text-center text-4xl font-bold uppercase lg:mb-24 lg:text-5xl">
       {title} <span className="text-primary-5">{subtitle}</span>
     </h2>
   );

@@ -5,6 +5,14 @@ export default {
     fontFamily: {
       lato: ["Lato", "sans-serif"],
     },
+    container: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
+    },
     extend: {
       backgroundImage: {
         main: "linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),url('/src/assets/images/main.jpg')",

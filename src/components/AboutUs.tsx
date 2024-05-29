@@ -4,22 +4,24 @@ import SectionHeading from "./SectionHeading";
 
 function AboutUs() {
   return (
-    <section className="container mx-auto px-8 pb-32 md:px-0">
+    <section className="container mx-auto px-8 pb-32 md:px-0 ">
       <SectionHeading title="about" subtitle="us" />
-      <div className="relative md:grid md:grid-cols-2 md:gap-5">
+      <div className="relative min-w-0 flex-grow md:grid md:grid-cols-2 md:gap-5">
         {/* Container for the image */}
-        <div className="relative w-auto">
+        <div className="image-container relative w-auto">
           {/* Apply the border to the container */}
-          <div className="lg:before:absolute lg:before:left-[-1.5rem] lg:before:top-[-1.5rem] lg:before:h-full lg:before:w-full lg:before:border-[.5rem] lg:before:border-primary-5">
+          <div className="before:rounded-lg before:md:max-w-[630px] lg:before:absolute lg:before:left-[-1.5rem] lg:before:top-[-1.5rem] lg:before:h-full lg:before:w-full lg:before:border-[.5rem] lg:before:border-primary-5">
             <img
               src={aboutImg}
-              className="relative z-50 h-full w-full rounded-lg border-primary-5 object-fill"
+              className="relative z-50 h-full w-full rounded-lg border-primary-5 object-fill md:max-w-[630px]"
               alt="About Us"
             />
           </div>
         </div>
         <div className="flex flex-col gap-2 pt-7 md:pt-0">
-          <h3 className="text-2xl font-semibold">Explore The Difference</h3>
+          <h3 className="text-2xl font-semibold lg:text-3xl">
+            Explore The Difference
+          </h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
