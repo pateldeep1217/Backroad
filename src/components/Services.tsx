@@ -8,9 +8,9 @@ function Services() {
       <div className="container mx-auto">
         <SectionHeading title="our" subtitle="services" />
 
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2  lg:grid-cols-3">
           <ServiceCard
-            icon={<IconWallet size={45} />}
+            icon={<IconWallet size={45} className="" />}
             title="Saving Money"
             text="Our cost-effective solutions help you save money without compromising on quality. Whether it’s budget-friendly accommodations, discounted travel packages, or smart spending tips, we’ve got your back."
           />
