@@ -17,7 +17,7 @@ function Header() {
   }
   return (
     <header className=" fixed left-0 right-0 top-0  z-50 bg-white">
-      <div className="container mx-auto md:flex md:items-center md:justify-between">
+      <div className="container mx-auto w-[90vw] md:flex md:items-center md:justify-between">
         <div className="flex h-16 items-center justify-between  px-8 md:p-0">
           <Logo />
           <IconMenu2
